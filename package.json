@@ -1,0 +1,31 @@
+{
+  "name": "Argedor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HumeirFaroog/Argedor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HumeirFaroog/Argedor/issues"
+  },
+  "homepage": "https://github.com/HumeirFaroog/Argedor#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "@truffle/hdwallet-provider": "^2.1.1",
+    "avalanche": "^3.15.5",
+    "ganache": "^7.5.0",
+    "truffle": "^5.6.4",
+    "web3": "^1.8.0"
+  }
+}
