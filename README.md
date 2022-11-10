@@ -21,7 +21,8 @@ https://user-images.githubusercontent.com/34124312/201012816-d313d539-6bea-46d6-
 
 ## 3- npx truffle migrate --network fuji
 <<<<<<< HEAD
-#  cd infura 
+#  cd endpoint 
+
 # go  run transfer.go
 # go  run balance.go
 
