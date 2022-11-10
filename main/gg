@@ -1,0 +1,41 @@
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+	"log"
+	"net/http"
+	"gitbub.com/gin-gonic/gin"
+)
+
+type Transfer struct {
+	From     string `json:oxooo`
+	To       string `json:oxooooo`
+	balances string `json:tokens`
+}
+
+type Transfers []Transfer
+
+func transferTonkens(w http.ResponseWriter, r *http.Request) {
+	transfers := Transfers{
+		Transfer{From: " 0x", To: "0x515f8F7e", balances: "balance"},
+	}
+
+	fmt.Println("Transfer: all the addresses")
+	json.NewEncoder(w).Encode(transfers)
+}
+
+func mainPage(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, " we need to  send  the tokens")
+}
+
+func handleRequests() {
+	http.HandleFunc("/", mainPage)
+	http.HandleFunc("/transfers", transferTonkens)
+	http.HandleFunc("/balance", transferTonkens)
+	log.Fatal(http.ListenAndServe(":8081", nil))
+}
+
+func main() {
+	handleRequests()
+}
