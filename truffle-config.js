@@ -1,7 +1,7 @@
 const Web3 = require("web3")
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const INFURA_API_KEY = "https://avalanche-fuji.infura.io/v3/1a41252c167b4d37ac22d3ba9d8b5aab";
+const INFURA_API_KEY = "";
 const MNEMONIC = "4d4ace62af99ecc8e8b4881d4cc5f8ffba9c4b449ea3d52e81d08a2058749641";
 
 module.exports = {
